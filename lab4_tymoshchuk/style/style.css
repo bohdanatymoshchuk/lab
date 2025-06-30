@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: white;
+    background-image: url('../image/ramka.gif');
+    background-repeat: repeat-y;
+    background-position: left;
+    background-attachment: scroll;
+    padding-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.task1 h2 {
+    font-size: 16pt;
+    color: #0033FF;
+    font-family: Geneva, Arial;
+}
+
+.task1 h2.curs {
+    font-size: 18pt;
+    font-style: italic;
+    font-family: "Courier New", Courier, mono;
+    color: #46dcf9;
+}
+
+.task1 h2.normal {
+    font-size: 16pt;
+    font-style: normal;
+    color: #FF0000;
+}
+
+#bgmagenta {
+    text-indent: 20px;
+    background-color: #1166FF;
+    color: #FFFF00;
+}
+
+#fishka {
+    background-color: #CC99FF;
+    color: #3300FF;
+    font-family: serif;
+    font-size: 20pt;
+    font-style: oblique;
+}
+
+#bgyellow {
+    background-color: #FFFF00;
+    color: #0000FF;
+    font-family: Verdana, Arial;
+}
+
+.task1 div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: dashed 3px;
+    font-size: 15pt;
+}
+
+.task1 div.text {
+    position: absolute;
+    font-family: "serif";
+    background-color: #99FFFF;
+    color: red;
+    font-style: oblique;
+    top: 600px;
+    width: 850px;
+    height: 150px;
+    padding: 20px;
+}
+
+#first {
+    top: 850px;
+    left: 50px;
+    background: #ccf0ff;
+    border-color: #0cf;
+}
+
+#second {
+    top: 950px;
+    left: 150px;
+    background: #fff0cc;
+    border-color: #fc0;
+    font-size: 10pt;
+}
+
+#first, #second {
+    margin: 10px;
+    left: 20px;
+}
+
+.task2 .paragraph {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.task2 .paragraph:nth-child(1) {
+    color: black;
+    background-color: white;
+    border-color: black;
+    text-indent: 0px;
+}
+
+.task2 .paragraph:nth-child(2) {
+    color: blue;
+    background-color: #f0f0f0;
+    border-color: blue;
+    border-style: dashed;
+    text-indent: 15px;
+}
+
+.task2 .paragraph:nth-child(3) {
+    color: green;
+    background-color: #ffffcc;
+    border-color: green;
+    border-style: double;
+    text-indent: 30px;
+}
+
+.task3 a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task3 a:hover {
+    background-color: #e0e0e0;
+}
+
+.task4 h4 {
+    margin-top: 100px;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.column1 {
+    width: 600px;
+    margin-right: 20px;
+    padding: 10px;
+    border: double 3px red;
+    background-color: #e6f2ff;
+    background-image: url('../image/bg_menu.gif');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed;
+    height: 120%;
+    overflow: auto;
+}
+
+.column2 {
+    width: 400px;
+    padding: 10px;
+    border: double 3px red;
+    background-color: #fff2e6;
+    background-image: url('../image/bg_menu.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-attachment: fixed;
+    height: 120%;
+    overflow: auto;
+}
+
+.column1 p, .column2 p {
+    text-indent: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}

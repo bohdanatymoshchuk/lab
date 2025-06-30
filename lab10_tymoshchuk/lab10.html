@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кондитерські вироби - Лабораторна 10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lab10_tymoshchuk/style/style.css">
+</head>
+<body>
+    <a href="../index.html" style="display: block; text-align: right;">На головну дисципліни</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Кондитерські вироби</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Головна</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Категорії
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Торти</a></li>
+                            <li><a class="dropdown-item" href="#">Цукерки</a></li>
+                            <li><a class="dropdown-item" href="#">Печиво</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Сезонні пропозиції</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Пошук">
+                    <button class="btn btn-outline-light" type="submit">Знайти</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="productCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/1.jpg" class="d-block w-100" alt="Торти">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Наші ексклюзивні торти</h5>
+                    <p>Створені з любов'ю та найкращих інгредієнтів</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/2.jpg" class="d-block w-100" alt="Цукерки">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Різноманітні цукерки</h5>
+                    <p>Для всіх смаків та нагод</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/3.jpg" class="d-block w-100" alt="Печиво">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ароматне домашнє печиво</h5>
+                    <p>За старовинними рецептами</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-3 bg-light p-4">
+                <h3>Наші переваги</h3>
+                <p>Використовуємо тільки натуральні інгредієнти без шкідливих добавок.</p>
+            </div>
+            <div class="col-md-6 bg-info p-4 text-white">
+                <h3>Спеціальна пропозиція</h3>
+                <p>Замовте торт до 10 кг та отримайте набір цукерок у подарунок!</p>
+                <button class="btn btn-warning">Дізнатися більше</button>
+            </div>
+            <div class="col-md-3 bg-light p-4">
+                <h3>Акції</h3>
+                <p>Щотижня нові знижки на певні категорії товарів.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <h2 class="text-center mb-4">Наші найпопулярніші продукти</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/4.jpg" class="card-img-top" alt="Шоколадний торт">
+                    <div class="card-body">
+                        <h5 class="card-title">Шоколадний торт</h5>
+                        <p class="card-text">Ніжний шоколадний бісквіт з вершковою начинкою та шоколадною глазур'ю.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">450 грн</span>
+                            <button class="btn btn-primary">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/5.jpg" class="card-img-top" alt="Макрунси">
+                    <div class="card-body">
+                        <h5 class="card-title">Макрунси</h5>
+                        <p class="card-text">Набір з 12 макрунсів різних смаків: полуниця, шоколад, ваніль, лайм.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">320 грн</span>
+                            <button class="btn btn-primary">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/6.jpg" class="card-img-top" alt="Печиво асоорті">
+                    <div class="card-body">
+                        <h5 class="card-title">Печиво асоорті</h5>
+                        <p class="card-text">Набір з 20 штук домашнього печива різних видів: з горіхами, шоколадом, варенням.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">280 грн</span>
+                            <button class="btn btn-primary">Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <h2 class="text-center mb-4">Зворотній зв'язок</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Ім'я</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12">
+                <label for="subject" class="form-label">Тема</label>
+                <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Повідомлення</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agree">
+                    <label class="form-check-label" for="agree">
+                        Погоджуюсь з обробкою персональних даних
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Надіслати</button>
+                <button type="reset" class="btn btn-outline-secondary ms-2">Скинути</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mb-5 text-center">
+        <h2 class="mb-4">Наші кнопки</h2>
+        <button type="button" class="btn btn-primary me-2">Основна</button>
+        <button type="button" class="btn btn-secondary me-2">Другорядна</button>
+        <button type="button" class="btn btn-success me-2">Успіх</button>
+        <button type="button" class="btn btn-danger me-2">Небезпека</button>
+        <button type="button" class="btn btn-warning me-2">Попередження</button>
+        <button type="button" class="btn btn-info me-2">Інформація</button>
+        <button type="button" class="btn btn-light me-2">Світла</button>
+        <button type="button" class="btn btn-dark me-2">Темна</button>
+        <button type="button" class="btn btn-link">Посилання</button>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Контакти</h5>
+                    <p>м. Київ, вул. Кондитерська, 15</p>
+                    <p>+380 12 345 6789</p>
+                    <p>info@confectionery.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Години роботи</h5>
+                    <p>Пн-Пт: 9:00 - 20:00</p>
+                    <p>Сб-Нд: 10:00 - 18:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Соціальні мережі</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i> Instagram</a><br>
+                    <a href="#" class="text-white me-2"><i class="bi bi-telegram"></i> Telegram</a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2023 Кондитерські вироби. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

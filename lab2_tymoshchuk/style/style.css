@@ -1,0 +1,94 @@
+*{ box-sizing:border-box; }
+
+body{
+    margin:20px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    line-height:1.4;
+}
+
+h1,h2,h3,h4{ margin-top:0 }
+
+table{ border-collapse:separate; }
+caption{ caption-side:bottom; font-weight:600; margin-top:4px }
+
+.tbl1{
+    width:40%;
+    height:200px;
+    border:4px solid purple;
+    border-collapse:collapse;
+}
+.tbl1 td{ border:2px solid purple; text-align:center }
+
+.tbl2{
+    width:60%;
+    border-spacing:5px;          
+}
+.tbl2 td{
+    border:1px solid #2b8f3f;
+    padding:4px 18px;
+    text-align:center;
+}
+
+.tbl3{
+    border:1px solid red;
+    border-spacing:20px;         
+}
+.tbl3 td{
+    border:1px solid red;
+    padding-left:0;              
+    text-align:center;
+}
+
+.tbl4{
+    border:2px solid #00a0a0;
+    border-spacing:30px;
+    width:60%;
+}
+.tbl4 th,
+.tbl4 td{
+    border:1px solid #00a0a0;
+    text-align:center;
+}
+.tbl4 th{ background:#ccffff }
+
+.tbl5{
+    width:80%;
+    border:3px solid magenta;
+    border-spacing:0;
+}
+.tbl5 td{ border:1px solid #404040; text-align:center }
+.tbl5 tr:nth-child(2){ background:#66cc00 }
+
+.tbl6{
+    border:1px solid #666;
+    border-collapse:collapse;
+}
+.tbl6 th,
+.tbl6 td{
+    border:1px solid #666;
+    padding:4px 10px;
+}
+.tbl6 th{ background:#f2f2f2; text-align:left }
+
+.tbl7{
+    width:70%;
+    border-collapse:collapse;
+}
+.tbl7 th,
+.tbl7 td{ border:2px solid #00066b }
+.tbl7 tr:nth-child(odd) td{ background:#dce9ff }
+.tbl7 tr:last-child td{ background:#ea4bfd }   
+
+.tbl8{
+    width:50%;
+    border:2px solid #888;
+    border-collapse:collapse;
+}
+.tbl8 td{ border:1px solid #888; text-align:center }
+
+.tbl8‑inner{
+    width:100%;
+    border:1px solid #888;
+    border-collapse:collapse;
+}
+.tbl8‑inner td{ border:1px solid #888; padding:2px }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрація float</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #333; }
+        .container { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; overflow: auto; }
+        .box { width: 100px; height: 100px; margin: 10px; padding: 10px; background-color: #ccffcc; }
+        
+        .left { float: left; }
+        .right { float: right; }
+        .none { float: none; }
+    </style>
+</head>
+<body>
+    <h2>Демонстрація властивості float</h2>
+    
+    <h3>float: left</h3>
+    <div class="container">
+        <div class="box left">float: left</div>
+        <p>Текст обтікає елемент з float: left з правого боку. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+    </div>
+    
+    <h3>float: right</h3>
+    <div class="container">
+        <div class="box right">float: right</div>
+        <p>Текст обтікає елемент з float: right з лівого боку. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+    </div>
+    
+    <h3>float: none</h3>
+    <div class="container">
+        <div class="box none">float: none</div>
+        <p>Елемент з float: none не обтікається текстом. Він залишається у нормальному потоці документа. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <a href="../lab4.html">Назад до лабораторної</a>
+</body>
+</html>

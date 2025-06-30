@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+header, footer, article, section, aside, nav, figure, figcaption {
+    display: block;
+}
+
+header {
+    background: radial-gradient(circle, #4CAF50, #2E7D32);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    outline: 3px dashed #1B5E20;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    resize: both;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #4CAF50, #8BC34A) 1;
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    border-image-outset: 5px;
+}
+
+article header {
+    background: none;
+    color: #2E7D32;
+    padding: 0;
+    text-align: left;
+    outline: none;
+    margin: 0 0 1rem 0;
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+aside {
+    background-color: #E8F5E9;
+    padding: 1rem;
+    border-left: 5px solid #4CAF50;
+    margin: 2rem 0;
+    quotes: "«" "»" "'" "'";
+}
+
+aside::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #4CAF50;
+    vertical-align: -0.4em;
+    line-height: 0;
+}
+
+aside::after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #4CAF50;
+    vertical-align: -0.4em;
+    line-height: 0;
+}
+
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0 0 15px 15px;
+}
+
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    caret-color: #4CAF50;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+article::before {
+    content: "Лікарська рослина: " attr(id);
+    display: block;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+    text-decoration: underline wavy #4CAF50;
+}
+
+nav a, article {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+}
+
+article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}

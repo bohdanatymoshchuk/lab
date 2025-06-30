@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР‑2 / Завдання 1 – Карта зображення</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <h3>Лабораторна робота 2 – Завдання 1</h3>
+    <p>
+        На зображенні розміщено три лікарські рослини. Клікніть на рослину, щоб перейти
+        до її сторінки у Wikipedia.
+    </p>
+
+    <img src="../lab2_tymoshchuk/image/medicinal_map.jpg" width="700" height="420"
+         alt="Лікарські рослини"
+         usemap="#medicinal">
+
+    <map name="medicinal" id="medicinal">
+        <area shape="rect"
+              coords="0,0,200,420"
+              href="https://uk.wikipedia.org/wiki/Звіробій_звичайний"
+              alt="Звіробій звичайний"
+              title="Звіробій звичайний">
+
+        <area shape="circle"
+              coords="350,210,80"
+              href="https://uk.wikipedia.org/wiki/Ромашка_лікарська"
+              alt="Ромашка лікарська"
+              title="Ромашка лікарська">
+
+        <area shape="rect"
+              coords="500,0,700,420"
+              href="https://uk.wikipedia.org/wiki/Валеріана_лікарська"
+              alt="Валеріана лікарська"
+              title="Валеріана лікарська">
+    </map>
+
+    <p style="font-size:0.9rem;color:#666">
+        <br>
+    </p>
+    
+    <a href="../lab2_tymoshchuk/lab2.html">Назад до лабораторної</a>
+</body>
+</html>

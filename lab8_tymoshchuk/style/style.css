@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "block1 block2 block3"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.block1 {
+    grid-area: block1;
+    background-color: #2196F3;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.block2 {
+    grid-area: block2;
+    background-color: #FF9800;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.block3 {
+    grid-area: block3;
+    background-color: #9C27B0;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.scroll-content {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scroll-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "block1"
+            "block2"
+            "block3"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .header, .block1, .block2, .block3, .footer {
+        padding: 12px;
+    }
+}
+
+@media print {
+    body {
+        background-color: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+
+    .container {
+        grid-template-areas:
+            "header"
+            "block1"
+            "block2"
+            "block3"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .header, .block1, .block2, .block3, .footer {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid #000;
+    }
+
+    .scroll-content {
+        max-height: none;
+        overflow: visible;
+    }
+}

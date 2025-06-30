@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрація clear</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #333; }
+        .container { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; }
+        .box { width: 100px; height: 100px; margin: 10px; padding: 10px; background-color: #ccccff; float: left; }
+        
+        .clear-left { clear: left; }
+        .clear-right { clear: right; }
+        .clear-both { clear: both; }
+        .clear-none { clear: none; }
+    </style>
+</head>
+<body>
+    <h2>Демонстрація властивості clear</h2>
+    
+    <h3>clear: left</h3>
+    <div class="container">
+        <div class="box">float: left</div>
+        <p class="clear-left">Цей абзац має clear: left, тому він не буде обтікати плаваючий елемент зліва.</p>
+    </div>
+    
+    <h3>clear: right</h3>
+    <div class="container">
+        <div class="box" style="float: right;">float: right</div>
+        <p class="clear-right">Цей абзац має clear: right, тому він не буде обтікати плаваючий елемент справа.</p>
+    </div>
+    
+    <h3>clear: both</h3>
+    <div class="container">
+        <div class="box">float: left</div>
+        <div class="box" style="float: right;">float: right</div>
+        <p class="clear-both">Цей абзац має clear: both, тому він не буде обтікати плаваючі елементи з обох сторін.</p>
+    </div>
+    
+    <h3>clear: none</h3>
+    <div class="container">
+        <div class="box">float: left</div>
+        <p class="clear-none">Цей абзац має clear: none, тому він буде обтікати плаваючі елементи.</p>
+    </div>
+    <a href="../lab4.html">Назад до лабораторної</a>
+</body>
+</html>

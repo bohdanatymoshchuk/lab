@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 3 - Тимощук В.11</title>
+    <link rel="stylesheet" href="../lab3_tymoshchuk/style/style.css">
+</head>
+<body>
+    <a href="../index.html" style="display: block; text-align: right;">На головну дисципліни</a>
+    <h1>Лабораторна робота 3</h1>
+    <h2>Робота з таблицями. Динамічні ефекти</h2>
+    
+    <table>
+        <tr>
+            <td colspan="4" class="header-cell">
+                <img src="../lab3_tymoshchuk/image/animation.gif.gif" alt="Анімація" class="animation">
+                <h2>Мої одногрупники</h2>
+            </td>
+        </tr>
+        <tr class="photos-row">
+            <td>
+                <a href="html/bio1.html" target="bio-frame">
+                    <img src="image/1.jpg" alt="Одногрупник 1">
+                    <p>Білий Олександр</p>
+                </a>
+            </td>
+            <td>
+                <a href="html/bio2.html" target="bio-frame">
+                    <img src="image/2.jpg" alt="Одногрупник 2">
+                    <p>Захарченко Станіслав</p>
+                </a>
+            </td>
+            <td>
+                <a href="html/bio3.html" target="bio-frame">
+                    <img src="image/3.jpg" alt="Одногрупник 3">
+                    <p>Іваницька Софія</p>
+                </a>
+            </td>
+            <td>
+                <a href="html/bio4.html" target="bio-frame">
+                    <img src="image/4.jpg" alt="Одногрупник 4">
+                    <p>Кава Олена</p>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="bio-cell">
+                <iframe name="bio-frame" src="html/bio1.html" class="bio-frame"></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <div class="media-section">
+        <div class="media-player">
+            <h3>Аудіо програвач</h3>
+            <audio controls>
+                <source src="song/example.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує аудіо елемент.
+            </audio>
+            <a href="song/example.mp3" download>Завантажити аудіо</a>
+        </div>
+
+        <div class="media-player">
+            <h3>Відео програвач</h3>
+            <video controls width="400">
+                <source src="video/example.mp4" type="video/mp4">
+                Ваш браузер не підтримує відео елемент.
+            </video>
+            <a href="video/example.mp4" download>Завантажити відео</a>
+        </div>
+    </div>

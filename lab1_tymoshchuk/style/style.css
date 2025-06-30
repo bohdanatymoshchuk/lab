@@ -1,0 +1,84 @@
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a.list1 {
+    color: #FFBB00;
+}
+
+a.list2 {
+    color: #800000;
+}
+
+#exam10 {
+    color: #56c500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+p.ex4 {
+    color: #00ff00;
+}
+
+p.ex5 {
+    color: #00ff00;
+    background-color: #ff0000;
+    padding: 5px;
+}
+
+p.ex6 {
+    font-family: Arial, Candara, "Century Gothic", sans-serif;
+}
+
+.ex7 {
+    font-family: "Times New Roman", serif;
+}
+h1.ex7 {
+    font-style: normal;
+}
+h2.ex7 {
+    font-style: italic;
+}
+p.ex7 {
+    font-style: oblique;
+}
+
+p.ex8 {
+     font-family: "EB Garamond", "Georgia", serif; 
+    font-feature-settings: "smcp";
+    font-variant-caps: small-caps;
+    font-size: 1.2rem;
+}
+
+
+p.ex9 {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+h1.ex10 {
+    font-size: 30px;
+}
+h2.ex10 {
+    font-size: 100pt;
+}
+h3.ex10 {
+    font-size: 120%;
+}
+p.ex10 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-indent: 10%;
+    text-align: justify;
+    text-decoration: line-through;
+    letter-spacing: 2px;
+}

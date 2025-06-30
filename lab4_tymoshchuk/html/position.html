@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрація position</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #333; }
+        .container { position: relative; height: 300px; border: 1px solid #ccc; margin-bottom: 20px; }
+        .box { width: 100px; height: 100px; padding: 10px; }
+        
+        .static { position: static; background-color: #ffcccc; }
+        .relative { position: relative; top: 20px; left: 20px; background-color: #ccffcc; }
+        .absolute { position: absolute; top: 50px; right: 50px; background-color: #ccccff; }
+        .fixed { position: fixed; bottom: 20px; right: 20px; background-color: #ffffcc; }
+        .sticky { position: sticky; top: 0; background-color: #ffccff; }
+    </style>
+</head>
+<body>
+    <h2>Демонстрація властивості position</h2>
+    
+    <h3>static (значення за замовчуванням)</h3>
+    <div class="container">
+        <div class="box static">static</div>
+        <p>Елементи з position: static розташовуються у нормальному потоці документа.</p>
+    </div>
+    
+    <h3>relative</h3>
+    <div class="container">
+        <div class="box relative">relative</div>
+        <p>Елемент з position: relative зміщується відносно свого нормального положення.</p>
+    </div>
+    
+    <h3>absolute</h3>
+    <div class="container">
+        <div class="box absolute">absolute</div>
+        <p>Елемент з position: absolute позиціонується відносно найближчого позиціонованого предка.</p>
+    </div>
+    
+    <h3>fixed</h3>
+    <div class="box fixed">fixed</div>
+    <p>Елемент з position: fixed завжди залишається на одному місці навіть при прокручуванні сторінки.</p>
+    
+    <h3>sticky</h3>
+    <div style="height: 200px; overflow: auto; border: 1px solid #ccc;">
+        <div class="box sticky">sticky</div>
+        <p style="height: 400px;">Елемент з position: sticky поводиться як relative, доки не досягне заданого положення, після чого "прилипає" до цього положення.</p>
+    </div>
+    <a href="../lab4.html">Назад до лабораторної</a>
+</body>
+</html>
