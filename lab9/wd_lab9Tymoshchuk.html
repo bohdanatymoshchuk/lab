@@ -8,95 +8,147 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600&display=swap');
 
+:root{
+  --bg:#f2f2f2;
+  --card:#ffffff;
+  --text:#111;
+  --muted:#666;
+
+  --c1:#FFD400;
+  --c2:#F64700;
+  --c3:#931600;
+
+  --radius:14px;
+  --gap:18px;
+}
+
+*{box-sizing:border-box}
+
 body{
   margin:0;
-  font-family: 'Nunito', sans-serif;
-  background:#f2f2f2;
-  color:#111;
+  font-family:'Nunito', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.wrapper{
+  max-width:1100px;
+  margin:30px auto 50px;
+  padding:0 16px;
 }
 
 h1{
   text-align:center;
-  margin:30px 0;
+  margin-bottom:20px;
+  font-weight:800;
 }
 
-h2{
-  margin:0 0 15px;
-}
-
-/* ===== GRID КОНТЕЙНЕР ===== */
-.container{
-  max-width:1000px;
-  margin:0 auto 50px;
+/* ===== GRID МАКЕТ (як у прикладі) ===== */
+.grid{
   display:grid;
+  gap:var(--gap);
   grid-template-columns: 2fr 1fr;
-  gap:20px;
+  grid-template-areas:
+    "header header"
+    "desc   desc"
+    "logos  banner"
+    "fonts  colors";
 }
 
-/* ===== КАРТКИ ===== */
 .card{
-  background:#fff;
-  padding:20px;
-  border-radius:14px;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
 }
 
-/* ===== ЛОГОТИПИ ===== */
-.logos{
+.card h2{
+  margin:0 0 12px;
+  font-size:18px;
+  font-weight:800;
+}
+
+/* ===== AREAS ===== */
+.header{grid-area:header; text-align:center;}
+.desc{grid-area:desc;}
+.logos{grid-area:logos;}
+.banner{grid-area:banner;}
+.fonts{grid-area:fonts;}
+.colors{grid-area:colors;}
+
+/* ===== HEADER ===== */
+.brand{
+  font-family:'Baloo 2', cursive;
+  font-size:32px;
+  margin:0;
+}
+
+/* ===== DESCRIPTION ===== */
+.desc p{
+  margin:0;
+  line-height:1.55;
+}
+
+/* ===== LOGOS ===== */
+.logo-grid{
   display:grid;
-  grid-template-rows: repeat(3, auto);
-  gap:15px;
+  gap:12px;
 }
 
 .logo-box{
   border:1px solid #ddd;
-  padding:15px;
+  border-radius:12px;
+  padding:12px;
   text-align:center;
 }
 
 .logo-box img{
   max-width:100%;
   height:auto;
+  margin-bottom:6px;
 }
 
-/* ===== ПРАВА КОЛОНКА ===== */
-.right{
-  display:grid;
-  grid-template-rows: auto auto auto;
-  gap:20px;
+.logo-box p{
+  margin:0;
+  font-size:13px;
+  color:var(--muted);
 }
 
-/* ===== БАНЕР ===== */
-.banner{
+/* ===== BANNER ===== */
+.banner-box{
   border:1px dashed #bbb;
-  padding:15px;
+  border-radius:12px;
+  padding:12px;
   text-align:center;
 }
 
-.banner img{
+.banner-box img{
   max-width:100%;
+  height:auto;
 }
 
-/* ===== ШРИФТИ ===== */
+/* ===== FONTS ===== */
 .font-title{
   font-family:'Baloo 2', cursive;
   font-size:26px;
+  margin:0 0 8px;
 }
 
 .font-text{
+  margin:0;
   font-size:15px;
-  line-height:1.5;
+  line-height:1.45;
 }
 
-/* ===== КОЛЬОРИ ===== */
-.colors{
+/* ===== COLORS ===== */
+.palette{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:15px;
+  gap:12px;
 }
 
 .color{
   border:1px solid #ddd;
-  border-radius:10px;
+  border-radius:12px;
   overflow:hidden;
 }
 
@@ -107,12 +159,20 @@ h2{
 .color p{
   margin:8px;
   font-size:12px;
+  color:var(--muted);
 }
 
-/* ===== АДАПТИВ ===== */
-@media (max-width:800px){
-  .container{
+/* ===== ADAPTIVE ===== */
+@media (max-width:900px){
+  .grid{
     grid-template-columns:1fr;
+    grid-template-areas:
+      "header"
+      "desc"
+      "logos"
+      "banner"
+      "fonts"
+      "colors";
   }
 }
 </style>
@@ -120,85 +180,12 @@ h2{
 
 <body>
 
-<h1>Презентація фірмового стилю</h1>
+<div class="wrapper">
 
-<div class="container">
+  <h1>Лабораторна робота №9 — Фірмовий стиль</h1>
 
-  <!-- ===== ЛІВА ЧАСТИНА ===== -->
-  <div class="card">
-    <h2>Логотипи</h2>
+  <div class="grid">
 
-    <div class="logos">
-
-      <div class="logo-box">
-        <img src="logo_top.png" alt="Логотип з текстом внизу">
-        <p>Знак + текст внизу</p>
-      </div>
-
-      <div class="logo-box">
-        <img src="logo_bw.png" alt="Ахроматичний логотип">
-        <p>Ахроматичний логотип</p>
-      </div>
-
-      <div class="logo-box">
-        <img src="logo_side.png" alt="Знак з текстом справа">
-        <p>Знак + текст справа</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ===== ПРАВА ЧАСТИНА ===== -->
-  <div class="right">
-
-    <div class="card">
-      <h2>Анімований логотип</h2>
-      <div class="banner">
-        <img src="banner.gif" alt="Анімований банер">
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Шрифти</h2>
-
-      <p class="font-title">
-        Заголовки — Meow
-      </p>
-
-      <p class="font-text">
-        Основний текст: a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
-        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
-        а б в г ґ д е є ж з и і ї й к л м н о п р с т у ф х ц ч ш щ ь ю я<br>
-        1234567890
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Кольорова палітра</h2>
-
-      <div class="colors">
-
-        <div class="color">
-          <div class="color-box" style="background:#FFD400"></div>
-          <p>#FFD400<br>RGB(255, 212, 0)</p>
-        </div>
-
-        <div class="color">
-          <div class="color-box" style="background:#F64700"></div>
-          <p>#F64700<br>RGB(246, 71, 0)</p>
-        </div>
-
-        <div class="color">
-          <div class="color-box" style="background:#931600"></div>
-          <p>#931600<br>RGB(147, 22, 0)</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-</body>
-</html>
+    <!-- HEADER -->
+    <section class="card header">
+      <p class="brand
