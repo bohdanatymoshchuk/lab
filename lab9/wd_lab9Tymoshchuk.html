@@ -6,186 +6,158 @@
 <title>Лабораторна 9 — Фірмовий стиль</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600&display=swap');
-
-:root{
-  --bg:#f2f2f2;
-  --card:#ffffff;
-  --text:#111;
-  --muted:#666;
-
-  --c1:#FFD400;
-  --c2:#F64700;
-  --c3:#931600;
-
-  --radius:14px;
-  --gap:18px;
-}
-
-*{box-sizing:border-box}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 body{
   margin:0;
-  font-family:'Nunito', sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-
-.wrapper{
-  max-width:1100px;
-  margin:30px auto 50px;
-  padding:0 16px;
+  background:#ffffff;
+  font-family: Arial, sans-serif;
+  color:#111;
 }
 
 h1{
   text-align:center;
-  margin-bottom:20px;
-  font-weight:800;
+  margin:30px 0;
+  font-size:28px;
 }
 
-/* ===== GRID МАКЕТ (як у прикладі) ===== */
-.grid{
+.main-grid{
+  max-width:1100px;
+  margin:0 auto 50px;
   display:grid;
-  gap:var(--gap);
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas:
-    "header header"
-    "desc   desc"
-    "logos  banner"
-    "fonts  colors";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:30px;
+  align-items:start;
 }
 
-.card{
-  background:var(--card);
-  border-radius:var(--radius);
-  padding:18px;
-}
-
-.card h2{
-  margin:0 0 12px;
+.left h2{
   font-size:18px;
-  font-weight:800;
+  margin-bottom:10px;
 }
 
-/* ===== AREAS ===== */
-.header{grid-area:header; text-align:center;}
-.desc{grid-area:desc;}
-.logos{grid-area:logos;}
-.banner{grid-area:banner;}
-.fonts{grid-area:fonts;}
-.colors{grid-area:colors;}
-
-/* ===== HEADER ===== */
-.brand{
-  font-family:'Baloo 2', cursive;
-  font-size:32px;
-  margin:0;
-}
-
-/* ===== DESCRIPTION ===== */
-.desc p{
-  margin:0;
-  line-height:1.55;
-}
-
-/* ===== LOGOS ===== */
-.logo-grid{
-  display:grid;
-  gap:12px;
-}
-
-.logo-box{
-  border:1px solid #ddd;
-  border-radius:12px;
-  padding:12px;
+.logo{
   text-align:center;
+  margin-bottom:15px;
 }
 
-.logo-box img{
-  max-width:100%;
-  height:auto;
-  margin-bottom:6px;
+.logo img{
+  max-width:140px;
 }
 
-.logo-box p{
-  margin:0;
-  font-size:13px;
-  color:var(--muted);
-}
-
-/* ===== BANNER ===== */
-.banner-box{
-  border:1px dashed #bbb;
-  border-radius:12px;
-  padding:12px;
-  text-align:center;
-}
-
-.banner-box img{
-  max-width:100%;
-  height:auto;
-}
-
-/* ===== FONTS ===== */
-.font-title{
-  font-family:'Baloo 2', cursive;
-  font-size:26px;
-  margin:0 0 8px;
-}
-
-.font-text{
-  margin:0;
-  font-size:15px;
-  line-height:1.45;
-}
-
-/* ===== COLORS ===== */
-.palette{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
+.colors{
+  display:flex;
   gap:12px;
+  margin-top:20px;
 }
 
 .color{
-  border:1px solid #ddd;
-  border-radius:12px;
-  overflow:hidden;
+  text-align:center;
+  font-size:12px;
 }
 
 .color-box{
-  height:60px;
+  width:50px;
+  height:50px;
+  margin:0 auto 6px;
 }
 
-.color p{
-  margin:8px;
-  font-size:12px;
-  color:var(--muted);
+.center{
+  background:#4a4a4a;
+  color:#fff;
+  padding:25px;
+  font-size:15px;
+  line-height:1.5;
 }
 
-/* ===== ADAPTIVE ===== */
-@media (max-width:900px){
-  .grid{
-    grid-template-columns:1fr;
-    grid-template-areas:
-      "header"
-      "desc"
-      "logos"
-      "banner"
-      "fonts"
-      "colors";
-  }
+.right h2{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.font-block{
+  margin-bottom:20px;
+}
+
+.font-title{
+  font-family:'Caveat', cursive;
+  font-size:20px;
+}
+
+.font-sample{
+  font-size:14px;
+  line-height:1.4;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
+<h1>Лабораторна робота №9 — Фірмовий стиль</h1>
 
-  <h1>Лабораторна робота №9 — Фірмовий стиль</h1>
+<div class="main-grid">
 
-  <div class="grid">
+  <div class="left">
+    <h2>Логотипи і слоган:</h2>
 
-    <!-- HEADER -->
-    <section class="card header">
-      <p class="brand
+    <div class="logo">
+      <img src="logo_top.png" alt="Логотип кольоровий">
+    </div>
+
+    <div class="logo">
+      <img src="logo_bw.png" alt="Логотип ахроматичний">
+    </div>
+
+    <div class="logo">
+      <img src="logo_side.png" alt="Горизонтальний логотип">
+    </div>
+
+    <div class="colors">
+      <div class="color">
+        <div class="color-box" style="background:#FFD400"></div>
+        #FFD400<br>RGB(255,212,0)
+      </div>
+      <div class="color">
+        <div class="color-box" style="background:#F64700"></div>
+        #F64700<br>RGB(246,71,0)
+      </div>
+      <div class="color">
+        <div class="color-box" style="background:#931600"></div>
+        #931600<br>RGB(147,22,)
+      </div>
+    </div>
+  </div>
+
+  <div class="center">
+    <b>Опис:</b><br><br>
+    Образ кота асоціюється з дружелюбністю, затишком і позитивними емоціями. Проста форма логотипу забезпечує його компактність та масштабованість, що дозволяє використовувати його в різних розмірах без втрати якості. Кольорова гама побудована на теплих відтінках жовтого та помаранчевого кольорів. Жовтий колір символізує радість і оптимізм, помаранчевий — активність і динамічність, а темно-червоний використовується як акцентний для створення контрасту. Аналогова кольорова схема забезпечує гармонійний та цілісний вигляд фірмового стилю.
+  </div>
+
+  <div class="right">
+    <h2>Шрифти:</h2>
+
+    <div class="font-block">
+      <b>Заголовки: Lemon</b>
+      <div class="font-title">
+        a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+        абвгґдеєжзиіїйклмнопрстуфхцчшщьюя<br>
+        АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ<br>
+        1234567890
+      </div>
+    </div>
+
+    <div class="font-block">
+      <b>Основний текст: Lemonada</b>
+      <div class="font-sample">
+        a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+        абвгґдеєжзиіїйклмнопрстуфхцчшщьюя<br>
+        1234567890
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
